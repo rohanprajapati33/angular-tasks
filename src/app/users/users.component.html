@@ -1,0 +1,10 @@
+<p>users works!</p>
+<input type="text" (blur)="handleData($event)">
+<h3>Siimple Form</h3>
+<p>Product Name: <input type="text" [(ngModel)]="name" /></p>
+<p>Product Name: <input type="text" [(ngModel)]="price" /></p>
+<p><button (click)="updateProduct()">Update Product</button></p>
+
+<app-hooks-child 
+[parentData]=data
+[product]=product>This is angular framework</app-hooks-child>
